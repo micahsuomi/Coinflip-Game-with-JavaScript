@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coinflip</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="game-title" data-aos="fade-right">Coinflip Game</h1>
+        <div class="image-placeholder">
+            <img src="coinye.png" class="heads hide"alt="">
+            <img src="doge.png" class="tails hide" alt="">
+
+        </div>
+        <button class="btn-flip" data-aos="fade-left">Flip Coin</button>
+        <h3 class="flip-times">You have rolled <span class="heads-rolls">0</span> heads and <span class="tails-rolls">0</span> tails</h3>
+
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
