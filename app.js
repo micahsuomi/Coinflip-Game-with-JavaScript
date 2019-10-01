@@ -19,13 +19,13 @@ function flipCoin() {
         console.log('heads');
         heads.classList.remove('hide');
         tails.classList.add('hide');
-        scoreContent.textContent = `You flipped ${headsScore++ +1} heads and ${tailsScore} tails`;
+        scoreContent.textContent = `You flipped ${headsScore++ +1} Coinye and ${tailsScore} Dogecoin`;
                 
     } else if(newFlip === tails){
         console.log('tails');
         tails.classList.remove('hide');
         heads.classList.add('hide');
-        scoreContent.textContent = `You flipped ${headsScore} heads and ${tailsScore++ +1} tails`;
+        scoreContent.textContent = `You flipped ${headsScore} Coinye and ${tailsScore++ +1} Dogecoin`;
 
     }          
 

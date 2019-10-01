@@ -24,6 +24,14 @@ body {
     letter-spacing: .8rem;
 }
 
+.game-title-subhead {
+    margin-top: .5rem;
+    font-size: 1.3rem;
+    
+}
+
+
+
 .image-placeholder {
     display: flex;
     justify-content: center;
