@@ -22,11 +22,17 @@ body {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: .8rem;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 }
 
 .game-title-subhead {
     margin-top: .5rem;
     font-size: 1.3rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
     
 }
 
@@ -50,6 +56,33 @@ body {
     from{opacity: 0}
     to {opacity: 1}
 }
+
+.coin-blank {
+    height: 15rem;
+    width: 15rem;
+    background-color: rgb(34, 28, 28);
+    border-radius: 50%;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    opacity: .7;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-transform: uppercase;
+    position: relative;
+
+
+    
+}
+
+.roll {
+    justify-self: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 .show {
     display: block;
 }
@@ -67,6 +100,9 @@ body {
     padding: 1rem;
     border: none;
     cursor: pointer;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 
 }
 
@@ -80,3 +116,54 @@ body {
     margin-top: 2rem;
     color: #fff;
 }
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+
+    }
+
+    80% {
+        transform: translateX(10px);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+
+    }
+
+    80% {
+        transform: translateX(-10px);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@media(max-width: 500px) {
+    html {
+        font-size: 78%;
+    }
+   
+}
+
+@media(max-width: 320px) {
+    html {
+        font-size: 70%;
+    }
+   
+}
+
